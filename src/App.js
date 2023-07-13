@@ -8,6 +8,8 @@ import EventPracticeFnComponent1 from "./step3/EventPracticeFnComponent1";
 import EventPracticeFnComponent2 from "./step3/EventPracticeFnComponent2";
 import {NotUseRef, UseRef, UseRef2, UseRef3} from "./step4/ref"
 import ScrollBox from "./step4/ScrollBox.js"
+import IterationSample from "./step5/IterationSample";
+import DynamicIteration from "./step5/DynamicIteration";
 
 /*function AppFunction() {
     return (
@@ -43,7 +45,7 @@ class AppClass extends Component {
         }
         return (
             <div>
-                <Ex1/><Ex2/><Ex3/><Ex4/><Ex5/><Ex6/><Ex7/>
+                {/*<Ex1/><Ex2/><Ex3/><Ex4/><Ex5/><Ex6/><Ex7/>
                 <Counter1/><Counter2/>
                 <MyFnComponent name={"컴포넌트 prop활용"} age={"10"}/>
                 <MyFnComponent2 name={"컴포넌트 children 활용법"}>컴포넌트2</MyFnComponent2>
@@ -60,11 +62,13 @@ class AppClass extends Component {
                 <UseRef2/>
                 <UseRef3 ref={(ref) => {this.useRef3 = ref}}/>
                 <button onClick={this.componentRef}>확인</button>
-                <ScrollBox ref={(ref) => this.scrollBox = ref}/>
-                <div style={btnStyle}>
-                    <button onClick={() => this.scrollBox.scrollToBottom()}>스크롤 하단으로</button>
+                <ScrollBox ref={(ref) => this.scrollBox = ref}/>*/}
+                {/*<div style={btnStyle}>
+                    <button onClick={() => this.scrollBox.scrollToBottom()}>스크롤 하단으로</button>*/}
                     {/* onClick 함수에 화살표 함수로 시작하지 않으면 초기 렌더링 시 scrollToBottom 함수는 undefined 이기 때문에 에러남~~ */}
-                </div>
+                {/*</div>*/}
+                {/*<IterationSample/>*/}
+                <DynamicIteration/>
             </div>
         )
     }
